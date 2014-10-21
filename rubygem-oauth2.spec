@@ -40,13 +40,13 @@ rm -f %{buildroot}%{ruby_gemdir}/gems/%{oname}-%{version}/.gitignore
 %{ruby_gemdir}/gems/%{oname}-%{version}/.document
 %{ruby_gemdir}/gems/%{oname}-%{version}/lib/
 %{ruby_gemdir}/gems/%{oname}-%{version}/spec/
-%{ruby_gemdir}/gems/%{oname}-%{version}/specs.watchr
+# %{ruby_gemdir}/gems/%{oname}-%{version}/specs.watchr
 %doc %{ruby_gemdir}/doc/%{oname}-%{version}
-%doc %{ruby_gemdir}/gems/%{oname}-%{version}/CHANGELOG.rdoc
-%doc %{ruby_gemdir}/gems/%{oname}-%{version}/LICENSE
+# %doc %{ruby_gemdir}/gems/%{oname}-%{version}/CHANGELOG.rdoc
+# %doc %{ruby_gemdir}/gems/%{oname}-%{version}/LICENSE
 %doc %{ruby_gemdir}/gems/%{oname}-%{version}/Rakefile
-%doc %{ruby_gemdir}/gems/%{oname}-%{version}/README.rdoc
-%doc %{ruby_gemdir}/gems/%{oname}-%{version}/VERSION
+# %doc %{ruby_gemdir}/gems/%{oname}-%{version}/README.rdoc
+# %doc %{ruby_gemdir}/gems/%{oname}-%{version}/VERSION
 %doc %{ruby_gemdir}/gems/%{oname}-%{version}/%{oname}.gemspec
 %{ruby_gemdir}/cache/%{oname}-%{version}.gem
 %{ruby_gemdir}/specifications/%{oname}-%{version}.gemspec
