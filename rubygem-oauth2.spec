@@ -1,14 +1,13 @@
 %define oname oauth2
 
 Name:       rubygem-%{oname}
-Version:    0.0.13
-Release:    %mkrel 1
+Version:    1.0.0
+Release:    1
 Summary:    A Ruby wrapper for the OAuth 2.0 protocol
 Group:      Development/Ruby
 License:    MIT
 URL:        http://github.com/intridea/oauth2
-Source0:    %{oname}-%{version}.gem
-BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-root
+Source0:    http://rubygems.org/gems/oauth2-1.0.0.gem
 Requires:   rubygems
 Requires:   rubygem(faraday) >= 0.4.1
 Requires:   rubygem(multi_json) >= 0.0.4
@@ -27,7 +26,6 @@ original OAuth gem.
 %build
 
 %install
-rm -rf %{buildroot}
 mkdir -p %{buildroot}%{ruby_gemdir}
 gem install --local --install-dir %{buildroot}%{ruby_gemdir} \
             --force --rdoc %{SOURCE0}
@@ -35,7 +33,6 @@ gem install --local --install-dir %{buildroot}%{ruby_gemdir} \
 rm -f %{buildroot}%{ruby_gemdir}/gems/%{oname}-%{version}/.gitignore
 
 %clean
-rm -rf %{buildroot}
 
 %files
 %defattr(-, root, root, -)
@@ -53,10 +50,3 @@ rm -rf %{buildroot}
 %doc %{ruby_gemdir}/gems/%{oname}-%{version}/%{oname}.gemspec
 %{ruby_gemdir}/cache/%{oname}-%{version}.gem
 %{ruby_gemdir}/specifications/%{oname}-%{version}.gemspec
-
-
-%changelog
-* Mon Dec 20 2010 Rémy Clouard <shikamaru@mandriva.org> 0.0.13-1mdv2011.0
-+ Revision: 623512
-- import rubygem-oauth2
-
