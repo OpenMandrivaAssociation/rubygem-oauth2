@@ -3,7 +3,7 @@
 Summary:	A Ruby wrapper for the OAuth 2.0 protocol
 Name:		rubygem-%{rbname}
 Version:	1.0.0
-Release:	1
+Release:	2
 License:	MIT
 Group:		Development/Ruby
 Url:		http://rubygems.org/gems/%{rbname}
