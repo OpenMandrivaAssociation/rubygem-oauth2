@@ -6,7 +6,7 @@ Version:	1.0.0
 Release:	2
 License:	MIT
 Group:		Development/Ruby
-Url:		http://rubygems.org/gems/%{rbname}
+Url:		https://rubygems.org/gems/%{rbname}
 Source0:	http://rubygems.org/gems/%{rbname}-%{version}.gem
 BuildRequires:	rubygems
 BuildArch:	noarch
